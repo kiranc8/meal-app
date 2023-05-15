@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima Madurai', cursive;
+    /* background-color: #181818; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    background-image: url('/assets/best-restaurants-in-singapore-oumi.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+/**************************** navbar ********************************/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 8px 12px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul li a::after {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul li .nav-item::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li .nav-item:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*** media query***/
+
+@media(max-width:700px) {
+
+    /* .text-box h1{
+        font-size: 20px;
+    } */
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        left: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+
+}
+
+/**************************** search bar ********************************/
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65%;
+}
+
+.search-bar h3 {
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #fff;
+}
+
+.search-input svg {
+    cursor: pointer;
+}
+
+.search-bar input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    padding: 5px 12px;
+}
+
+.input-button {
+    position: relative;
+}
+
+/**************************** Search result section ********************************/
+.search-results {
+    /* margin-top: 20px; */
+    min-height: 50vh;
+    background-color: #181818;
+    color: #fff;
+}
+
+.search-results-heading {
+    display: flex;
+    font-size: 20px;
+    /* justify-content: center; */
+    margin-left: 35px;
+    margin-bottom: 10px;
+    padding-top: 35px;
+}
+
+/**************************** cards ********************************/
+.cards,
+.fav-cards {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.meal-card {
+    position: relative;
+    width: 250px;
+    /* height: 417px; */
+    margin: 15px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    color: #000;
+}
+
+.card-heading svg {
+    /* color: #f44336; */
+    cursor: pointer;
+}
+
+.card-heading svg:hover {
+    color: #f44336;
+}
+
+.card-heading-recipe {
+    color: #f44336;
+}
+
+.card-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.card-button button {
+    width: 150px;
+    height: 40px;
+    background-color: #f44336;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.meal-card:hover .card-image {
+    opacity: 0.8;
+}
+
+.meal-card:hover .card-button {
+    opacity: 1;
+}
+
+.card-button svg {
+    color: #f44336;
+}
+
+.card-icon {
+    background-image: url('/assets/heart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 81.5vh;
+}

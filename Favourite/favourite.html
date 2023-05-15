@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Favourite</title>
+  </head>
+  <body style="background-color: #181818" onload="showFavList()">
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="/Home/home.html">Home</a></li>
+          <li><a href="/Favourite/favourite.html">Favourite</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="fav-cards"></div>
+    <script src="/Favourite/favourite.js"></script>
+  </body>
+</html>
