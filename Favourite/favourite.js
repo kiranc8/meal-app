@@ -1,5 +1,5 @@
 function showFavList() {
-  let favList = JSON.parse(localStorage.getItem("favList"));
+  let favList = JSON.parse(localStorage.getItem("favList")) || [];
   let html = "";
   if (favList.length !== 0) {
     for (let index = 0; index < favList.length; index++) {
