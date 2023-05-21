@@ -1,3 +1,4 @@
+// function for display details
 function showDetails() {
   var url_string = window.location.href.toLowerCase();
   var url = new URL(url_string);
@@ -30,10 +31,13 @@ function showDetails() {
 }
 
 var navLinks = document.getElementById("navLinks");
+
+// function for display menu
 function showMenu() {
-  console.log("fghjk");
   navLinks.style.left = "0";
 }
+
+// function for display menu
 function hideMenu() {
   navLinks.style.left = "-200px";
 }

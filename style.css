@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Arima Madurai', cursive;
-    /* background-color: #181818; */
 }
 
 .header {
@@ -75,9 +74,6 @@ nav .fa {
 
 @media(max-width:700px) {
 
-    /* .text-box h1{
-        font-size: 20px;
-    } */
     .nav-links ul li {
         display: block;
     }
@@ -150,7 +146,6 @@ nav .fa {
 
 /**************************** Search result section ********************************/
 .search-results {
-    /* margin-top: 20px; */
     min-height: 50vh;
     background-color: #181818;
     color: #fff;
@@ -159,7 +154,6 @@ nav .fa {
 .search-results-heading {
     display: flex;
     font-size: 20px;
-    /* justify-content: center; */
     margin-left: 35px;
     margin-bottom: 10px;
     padding-top: 35px;
@@ -177,7 +171,6 @@ nav .fa {
 .meal-card {
     position: relative;
     width: 250px;
-    /* height: 417px; */
     margin: 15px;
     border: none;
     background-color: #ffffff;

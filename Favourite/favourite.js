@@ -1,3 +1,4 @@
+// function for display favourites
 function showFavList() {
   let favList = JSON.parse(localStorage.getItem("favList")) || [];
   let html = "";
@@ -39,6 +40,7 @@ function showFavList() {
   }
 }
 
+// function for remove item from favourites
 function remove(id) {
   favList = JSON.parse(localStorage.getItem("favList"));
   let index = favList.findIndex((obj) => obj.idMeal == id);
@@ -50,9 +52,12 @@ function remove(id) {
 
 var navLinks = document.getElementById("navLinks");
 
+// function for display menu
 function showMenu() {
   navLinks.style.left = "0";
 }
+
+// function for hide menu
 function hideMenu() {
   navLinks.style.left = "-200px";
 }

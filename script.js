@@ -5,6 +5,7 @@ title = document.querySelector(".search-results-heading");
 searchButton.addEventListener("click", showResult);
 title.innerHTML = "You don't have any search results ";
 
+// function which shows search results
 function showResult() {
   fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput.value.trim()}`
@@ -73,6 +74,7 @@ function showResult() {
     .catch((err) => console.log(err));
 }
 
+// function for add to favourites
 function addToFav(id) {
   let favList = JSON.parse(localStorage.getItem("favList")) || [];
   favList.push(id);
@@ -81,6 +83,7 @@ function addToFav(id) {
   showResult();
 }
 
+// function for remove item from favourites
 function remove(id) {
   favList = JSON.parse(localStorage.getItem("favList"));
   console.log(favList);
@@ -93,9 +96,12 @@ function remove(id) {
 
 var navLinks = document.getElementById("navLinks");
 
+// function for display menu
 function showMenu() {
   navLinks.style.left = "0";
 }
+
+// function for hide menu
 function hideMenu() {
   navLinks.style.left = "-200px";
 }

@@ -3,6 +3,7 @@ body {
     color: #fff;
 }
 
+/**************************** navbar ********************************/
 nav {
     display: flex;
     padding: 2% 6%;
@@ -36,8 +37,8 @@ nav {
     color: #fff;
 }
 
+/**************************** Details section ********************************/
 .details {
-    /* height: 70vh; */
     display: flex;
 }
 
@@ -66,6 +67,7 @@ nav {
     text-align: justify;
 }
 
+/* media query for responsiveness */
 @media (max-width:1245px) {
     .recipe {
         display: flex;
