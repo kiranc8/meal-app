@@ -15,7 +15,7 @@ function showResult() {
         let resData = data.meals.map((res) => res);
         if (resData && searchInput.value.trim() != "") {
           let li = "";
-          let favList = JSON.parse(localStorage.getItem("favList"));
+          let favList = JSON.parse(localStorage.getItem("favList")) || [];
           resData.forEach((meal) => {
             if (favList.includes(parseInt(meal.idMeal))) {
               li += `
